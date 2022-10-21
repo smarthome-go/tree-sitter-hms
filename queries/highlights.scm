@@ -68,6 +68,7 @@
   "as"
   "catch"
   "continue"
+  "break"
   "else"
   "for"
   "from"
