@@ -6,7 +6,7 @@
 (type) @type.builtin
 
 ((ident) @function.builtin
-  (#match? @function.builtin "^(exit|throw|assert|println|sleep|switch_on|switch|notify|log|exec|get|http)$"))
+  (#match? @function.builtin "^(exit|throw|assert|print|println|sleep|switch_on|switch|notify|log|exec|get|http)$"))
 
 ((ident) @variable.builtin
   (#match? @variable.builtin "^(user|weather|time)$"))
