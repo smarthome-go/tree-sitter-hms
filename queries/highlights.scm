@@ -4,7 +4,12 @@
 (bool) @boolean
 (number) @number
 (type) @type.builtin
-(ident) @variable
+
+((ident) @function.builtin
+  (#match? @function.builtin "^(exit|throw|assert|print|sleep|switch_on|switch|notify|log|exec|get|http)$"))
+
+((ident) @variable.builtin
+  (#match? @variable.builtin "^(user|weather|time)$"))
 
 (fn_expr
   name: (ident) @function)
@@ -19,11 +24,7 @@
   function: (member_expr
     field: (ident) @method.call))
 
-((ident) @function.builtin
-  (#match? @function.builtin "^(exit|throw|assert|print|sleep|switch_on|switch|notify|log|exec|get|http)$"))
-
-((ident) @variable.builtin
-  (#match? @variable.builtin "^(user|weather|time)$"))
+(ident) @variable
 
 [
   "-"
@@ -85,3 +86,5 @@
 ["if" "else"] @conditional
 ["for" "while" "loop"] @repeat
 ["import" "from"] @include
+
+"null" @constant.builtin
