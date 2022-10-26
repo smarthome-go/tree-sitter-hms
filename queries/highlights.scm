@@ -63,6 +63,8 @@
   ")"
   "{"
   "}"
+  "["
+  "]"
 ] @punctuation.bracket
 
 [

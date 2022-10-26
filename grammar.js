@@ -53,6 +53,7 @@ module.exports = grammar({
                 $.prefix_expr,
                 $.infix_expr,
                 $.member_expr,
+                $.index_expr,
                 $.call_expr,
                 $.assign_expr,
                 $.cast_expr,
@@ -63,6 +64,7 @@ module.exports = grammar({
                 $.bool,
                 $.string,
                 $.pair_expr,
+                $.list_literal,
                 'null',
                 $.ident,
                 $.if_expr,
@@ -79,6 +81,7 @@ module.exports = grammar({
                 '=>',
                 field('value', $._expression),
             )),
+        list_literal: $ => seq('[', commaSep($._expression), ']'),
         prefix_expr: $ =>
             prec.left(
                 'unary',
@@ -122,6 +125,16 @@ module.exports = grammar({
                     field('object', $._expression),
                     '.',
                     field('field', $.ident),
+                ),
+            ),
+        index_expr: $ =>
+            prec(
+                'member',
+                seq(
+                    field('object', $._expression),
+                    field('open', '['),
+                    field('index', $._expression),
+                    field('close', ']'),
                 ),
             ),
         call_expr: $ =>
