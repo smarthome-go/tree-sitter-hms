@@ -34,6 +34,8 @@ vim.filetype.add { extension = { hms = 'homescript' } }
 ### Highlighting and Indentation
 
 If you want to use this parser for highlighting and indentation, you will also
-have to add the files [`queries/highlights.scm`](./queries/highlights.scm) and
-[`queries/indents.scm`](./queries/indents.scm) to a directory called
-`queries/hms/` in your Neovim runtime path (see `:help rtp`).
+have to add this repository as a plugin, for example for packer.nvim add this:
+
+```lua
+use { 'smarthome-go/tree-sitter-hms' }
+```
