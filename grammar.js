@@ -65,6 +65,7 @@ module.exports = grammar({
                 $.string,
                 $.pair_expr,
                 $.list_literal,
+                $.object_literal,
                 'null',
                 $.ident,
                 $.if_expr,
@@ -82,6 +83,7 @@ module.exports = grammar({
                 field('value', $._expression),
             )),
         list_literal: $ => seq('[', commaSep($._expression), ']'),
+        object_literal: $ => seq('{', commaSep(seq($.ident, ':', $._expression)), '}'),
         prefix_expr: $ =>
             prec.left(
                 'unary',

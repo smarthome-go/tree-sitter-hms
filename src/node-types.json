@@ -64,6 +64,10 @@
           "named": true
         },
         {
+          "type": "object_literal",
+          "named": true
+        },
+        {
           "type": "pair_expr",
           "named": true
         },
@@ -156,6 +160,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -283,6 +291,10 @@
             "named": true
           },
           {
+            "type": "object_literal",
+            "named": true
+          },
+          {
             "type": "pair_expr",
             "named": true
           },
@@ -391,6 +403,10 @@
           "named": true
         },
         {
+          "type": "object_literal",
+          "named": true
+        },
+        {
           "type": "pair_expr",
           "named": true
         },
@@ -487,6 +503,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -596,6 +616,10 @@
             "named": true
           },
           {
+            "type": "object_literal",
+            "named": true
+          },
+          {
             "type": "pair_expr",
             "named": true
           },
@@ -699,6 +723,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -839,6 +867,10 @@
           "named": true
         },
         {
+          "type": "object_literal",
+          "named": true
+        },
+        {
           "type": "pair_expr",
           "named": true
         },
@@ -931,6 +963,10 @@
         },
         {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "object_literal",
           "named": true
         },
         {
@@ -1075,6 +1111,10 @@
             "named": true
           },
           {
+            "type": "object_literal",
+            "named": true
+          },
+          {
             "type": "pair_expr",
             "named": true
           },
@@ -1162,6 +1202,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -1268,6 +1312,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -1423,6 +1471,10 @@
             "named": true
           },
           {
+            "type": "object_literal",
+            "named": true
+          },
+          {
             "type": "pair_expr",
             "named": true
           },
@@ -1529,6 +1581,10 @@
             "named": true
           },
           {
+            "type": "object_literal",
+            "named": true
+          },
+          {
             "type": "pair_expr",
             "named": true
           },
@@ -1618,6 +1674,10 @@
         },
         {
           "type": "number",
+          "named": true
+        },
+        {
+          "type": "object_literal",
           "named": true
         },
         {
@@ -1741,6 +1801,10 @@
             "named": true
           },
           {
+            "type": "object_literal",
+            "named": true
+          },
+          {
             "type": "pair_expr",
             "named": true
           },
@@ -1766,6 +1830,101 @@
           }
         ]
       }
+    }
+  },
+  {
+    "type": "object_literal",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "assign_expr",
+          "named": true
+        },
+        {
+          "type": "bool",
+          "named": true
+        },
+        {
+          "type": "call_expr",
+          "named": true
+        },
+        {
+          "type": "cast_expr",
+          "named": true
+        },
+        {
+          "type": "fn_expr",
+          "named": true
+        },
+        {
+          "type": "for_expr",
+          "named": true
+        },
+        {
+          "type": "ident",
+          "named": true
+        },
+        {
+          "type": "if_expr",
+          "named": true
+        },
+        {
+          "type": "index_expr",
+          "named": true
+        },
+        {
+          "type": "infix_expr",
+          "named": true
+        },
+        {
+          "type": "list_literal",
+          "named": true
+        },
+        {
+          "type": "loop_expr",
+          "named": true
+        },
+        {
+          "type": "member_expr",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "object_literal",
+          "named": true
+        },
+        {
+          "type": "pair_expr",
+          "named": true
+        },
+        {
+          "type": "paren_expr",
+          "named": true
+        },
+        {
+          "type": "prefix_expr",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "try_expr",
+          "named": true
+        },
+        {
+          "type": "while_expr",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -1844,6 +2003,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -1954,6 +2117,10 @@
           "named": true
         },
         {
+          "type": "object_literal",
+          "named": true
+        },
+        {
           "type": "pair_expr",
           "named": true
         },
@@ -2046,6 +2213,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -2175,6 +2346,10 @@
           "named": true
         },
         {
+          "type": "object_literal",
+          "named": true
+        },
+        {
           "type": "pair_expr",
           "named": true
         },
@@ -2271,6 +2446,10 @@
           },
           {
             "type": "number",
+            "named": true
+          },
+          {
+            "type": "object_literal",
             "named": true
           },
           {
@@ -2408,6 +2587,10 @@
           "named": true
         },
         {
+          "type": "object_literal",
+          "named": true
+        },
+        {
           "type": "pair_expr",
           "named": true
         },
@@ -2520,6 +2703,10 @@
   },
   {
     "type": "/=",
+    "named": false
+  },
+  {
+    "type": ":",
     "named": false
   },
   {
