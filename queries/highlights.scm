@@ -16,7 +16,9 @@
 (parameters (ident) @parameter)
 
 (member_expr
-  field: (ident) @property)
+  field: (ident) @field)
+(object_literal
+  (ident) @field)
 
 (call_expr
   function: (ident) @function.call)
