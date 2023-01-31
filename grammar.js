@@ -61,6 +61,7 @@ module.exports = grammar({
         _atom: $ =>
             choice(
                 $.number,
+                $.range,
                 $.bool,
                 $.string,
                 $.pair_expr,
@@ -82,6 +83,7 @@ module.exports = grammar({
                 '=>',
                 field('value', $._expression),
             )),
+        range: $ => seq($.number, '..', $.number),
         list_literal: $ => seq('[', commaSep($._expression), ']'),
         object_literal: $ => seq('{', commaSep(seq($.ident, ':', $._expression)), '}'),
         prefix_expr: $ =>
@@ -169,7 +171,7 @@ module.exports = grammar({
             ),
         if_expr: $ =>
             seq('if', $._expression, $.block, optional(seq('else', choice($.if_expr, $.block)))),
-        for_expr: $ => seq('for', $.ident, 'in', $._expression, '..', $._expression, $.block),
+        for_expr: $ => seq('for', $.ident, 'in', $._expression, $.block),
         while_expr: $ => seq('while', $._expression, $.block),
         loop_expr: $ => seq('loop', $.block),
         fn_expr: $ =>

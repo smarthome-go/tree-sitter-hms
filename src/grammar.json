@@ -247,6 +247,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "range"
+        },
+        {
+          "type": "SYMBOL",
           "name": "bool"
         },
         {
@@ -331,6 +335,23 @@
           }
         ]
       }
+    },
+    "range": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "number"
+        },
+        {
+          "type": "STRING",
+          "value": ".."
+        },
+        {
+          "type": "SYMBOL",
+          "name": "number"
+        }
+      ]
     },
     "list_literal": {
       "type": "SEQ",
@@ -1306,14 +1327,6 @@
         {
           "type": "STRING",
           "value": "in"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_expression"
-        },
-        {
-          "type": "STRING",
-          "value": ".."
         },
         {
           "type": "SYMBOL",
